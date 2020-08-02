@@ -1,0 +1,16 @@
+<div class="admin">
+    <div class="sign">
+        <form class="sign-form" [formGroup]="signInForm" novalidate (ngSubmit)="signIn()">
+            <div class="title">Вход в панель администратора</div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Логин</mat-label>
+                <input matInput placeholder="логин" formControlName="login">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Пароль</mat-label>
+                <input matInput placeholder="пароль" type="password" formControlName="password">
+            </mat-form-field>    
+            <input type="submit" [disabled]="signInForm.invalid" value="Войти" name="Sign-in">                        
+        </form>
+    </div>
+</div>

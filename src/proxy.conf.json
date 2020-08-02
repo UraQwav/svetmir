@@ -1,0 +1,12 @@
+{
+    "/admins/*": {
+        "target": "http://192.168.100.3:8080",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/post/*": {
+        "target": "http://192.168.100.3:8080",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

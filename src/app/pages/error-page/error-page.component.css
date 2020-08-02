@@ -1,0 +1,8 @@
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error img{
+    height: 70vh;
+}

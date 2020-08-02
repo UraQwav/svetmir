@@ -1,0 +1,25 @@
+<div class="admin-page">
+    <div class="header">
+        <div class="header-content">
+            <div class="header-logo"><a (click)="adminhome()">S</a></div>
+            <div class="header-content-item"><a (click)="adminhome()">Svetomir Admin Panel</a></div>
+        </div>
+        <div class="header-price">
+            <div class="header-price-item" (click)="LogOut()">Выйти</div>
+        </div>
+    </div>
+    <div class="chouse">
+        <div class="post" (click)="addPost()">
+            <div class="img">
+                <img src="assets/images/add.png" alt="">
+            </div>
+            <div class="text">Добавить статью</div>
+        </div>
+        <div class="post" (click)="deletePost()">
+            <div class="img">
+                <img src="assets/images/delete.png" alt="">
+            </div>
+            <div class="text">Удалить статью</div>
+        </div>
+    </div>
+</div>

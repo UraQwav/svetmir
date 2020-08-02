@@ -1,0 +1,44 @@
+.contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+}
+.maps{
+    width: 80%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0rem 0rem 2rem 0.35rem rgba(201,194,194,1);
+    margin: 2rem;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+}
+.rekvizits{
+    width: 50%;
+    line-height: 1.7rem;
+}
+.contacts h2{
+    margin-bottom:0.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rekvizits{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .image-contact img{
+        width: 110%;
+    }
+
+}

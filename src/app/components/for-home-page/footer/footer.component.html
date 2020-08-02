@@ -1,0 +1,34 @@
+<div *ngIf="logOutCheck;else unset"  class="footer">
+    <div class="footer-left-content">
+        <div class="footer-logo">
+            <div class="header-content">
+                <div class="header-logo"><a routerLink="home">S</a></div>
+                <div class="header-content-item"><a routerLink="home">Svetomir</a></div>
+            </div>
+        </div>
+        <div class="footer-left-text">Компания занимается продажей электротехники, монтажом, предоставляет широкий спектр услуг рекламы, оформление зданий и прилегающей территории. </div>
+    </div>
+    <div class="footer-centr-content none">
+        <div class="footer-title">Продукты</div>
+        <div class="footer-list">
+            <a href="assets/documents/price-list.pdf" download>Дюралайт</a>
+            <a href="assets/documents/price-list.pdf" download>Гибкий неон</a>
+            <a href="assets/documents/price-list.pdf" download>Светодиодные ленты</a>
+        </div>
+    </div>
+    <div class="footer-centr-content none">
+        <div class="footer-title">Блог</div>
+        <div class="footer-list">
+            <a routerLink="blog">Статьи</a>
+        </div>
+    </div>
+    <div class="footer-right-content none">
+        <div class="footer-title">Связаться с&nbsp;нами</div>
+        <div class="footer-list">
+            <a routerLink="contacts">Контакты</a>
+        </div>
+    </div>
+</div>
+<ng-template #unset>
+    <div class="hiden"></div>
+</ng-template>

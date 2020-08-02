@@ -1,0 +1,29 @@
+<div class="admin-page">
+    <div class="header">
+        <div class="header-content">
+            <div class="header-logo"><a (click)="adminhome()">S</a></div>
+            <div class="header-content-item"><a (click)="adminhome()">Svetomir Admin Panel</a></div>
+        </div>
+        <div class="header-price">
+            <div class="header-price-item" (click)="LogOut()">Выйти</div>
+        </div>
+    </div>
+    <div class="chouse">
+        <div *ngFor="let item of post">
+            <div class="post-item">
+                <a>
+                    <img src={{item.image}} alt="">
+                </a>
+                <div class="post-title">{{item.title}}</div>
+                <div class="post-ShortText">{{item.shorting}}...</div>
+                <div class="profile-info">
+                    <div class="item">Автор: {{item.info}}</div>
+                    <div class="item">Опубликовано: {{item.date}}</div>
+                </div>
+            </div>
+            <div class="verBut" (click)="clDelete(item)">
+                Delete
+            </div>
+        </div>
+    </div>
+</div>

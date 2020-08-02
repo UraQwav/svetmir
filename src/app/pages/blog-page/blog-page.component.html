@@ -1,0 +1,15 @@
+<div class="blog">
+    <div *ngFor="let item of post">
+        <div class="post-item" (click)="openPostById(item.postId)">
+            <a>
+                <img src={{item.image}} alt="">
+            </a>
+            <div class="post-title">{{item.title}}</div>
+            <div class="post-ShortText">{{item.shorting}}...</div>
+            <div class="profile-info">
+                <div class="item">Автор: {{item.info}}</div>
+                <div class="item">Опубликовано: {{item.date}}</div>
+            </div>
+        </div>
+    </div>
+</div>

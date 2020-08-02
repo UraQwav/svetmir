@@ -1,0 +1,32 @@
+<div *ngIf="logOutCheck;else unset"  class="header">
+    <div class="header-content">
+        <div class="header-logo"><a routerLink="home">S</a></div>
+        <div class="header-content-item"><a routerLink="home">Svetomir</a></div>
+        <div class="hiden">
+            <div class="header-content-item"><a routerLink="home">Главная</a></div>
+            <div class="header-content-item"><a routerLink="contacts">Контакты</a></div>
+            <div class="header-content-item"><a routerLink="blog">Блог</a></div>
+            <div class="header-content-item"><a routerLink="about">О нас</a></div>
+        </div>
+    </div>
+    <div class="header-price">
+        <div class="header-price-item">
+            <a class="hiden" href="assets/documents/price-list.pdf" download>Прайс-лист</a>
+            <img src={{this.imgsrc}} class="vis" (click)="openMenu()" alt="">
+        </div>
+    </div>
+</div>
+<div class="menu" class="hidenmenu" [class.vis]="visiable">
+    <div class="header-content-item"><a routerLink="home">Главная</a></div>
+    <div class="header-content-item"><a routerLink="contacts">Контакты</a></div>
+    <div class="header-content-item"><a routerLink="blog">Блог</a></div>
+    <div class="header-content-item"><a routerLink="about">О нас</a></div>
+    <div class="header-price">
+        <div class="header-price-item">
+            <a href="assets/documents/price-list.pdf" download>Прайс-лист</a>
+        </div>
+    </div>
+</div>
+<ng-template #unset>
+    <div class="hiden"></div>
+</ng-template>

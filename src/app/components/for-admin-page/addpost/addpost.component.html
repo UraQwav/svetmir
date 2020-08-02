@@ -1,0 +1,34 @@
+<div class="admin-page">
+    <div class="header">
+        <div class="header-content">
+            <div class="header-logo"><a (click)="adminhome()">S</a></div>
+            <div class="header-content-item"><a (click)="adminhome()">Svetomir Admin Panel</a></div>
+        </div>
+        <div class="header-price">
+            <div class="header-price-item" (click)="LogOut()">Выйти</div>
+        </div>
+    </div>
+    <div class="chouse">
+        <form class="add-post-form" [formGroup]="addForm" novalidate (ngSubmit)="addPost()">
+            <div class="item">
+                <mat-form-field appearance="fill" class="input">
+                    <mat-label>Ссылка на картинку для статьи</mat-label>
+                    <input matInput placeholder="Ссылка на картинку для статьи" formControlName="image">
+                </mat-form-field>
+            </div>
+            <div class="item">
+                <mat-form-field appearance="fill" class="input">
+                    <mat-label>Заголовок статьи</mat-label>
+                    <input matInput placeholder="Заголовок статьи" formControlName="title">
+                </mat-form-field>
+            </div>
+            <div class="item">
+                <mat-form-field appearance="fill" class="inputBig">
+                    <mat-label>Текст статьи</mat-label>
+                    <textarea matInput placeholder="Текст статьи" formControlName="text"></textarea>
+                </mat-form-field>
+            </div>
+            <input type="submit" [disabled]="addForm.invalid" value="Добавить статью" name="add-post">  
+        </form>
+    </div>
+</div>
